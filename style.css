@@ -1,0 +1,79 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+    /* colors */
+    --clr-strong-cyan: 172, 67%, 45%;
+    --clr-very-dark-cyan: 183, 100%, 15%;
+    --clr-dark-cyan: 183, 79%, 24%;
+    --clr-dark-grayish-cyan: 186, 14%, 43%;
+    --clr-grayish-cyan: 184, 14%, 56%;
+    --clr-light-grayish-cyan: 185, 41%, 84%;
+    --clr-very-light-grayish-cyan: 189, 41%, 97%;
+    --clr-white: 0, 0%, 100%;
+    
+    /* font-sizes */
+    --font-size: 1.5rem;
+    
+    /* font-families */
+    --font-family: 'Space Mono', monospace;
+}
+
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* colors */
+.bg-strong-cyan{ background-color: hsl(var(--clr-strong-cyan));}
+.bg-very-dark-cyan{ background-color: hsl(var(--clr-very-dark-cyan));}
+.bg-dark-cyan{ background-color: hsl(var(--clr-dark-cyan));}
+.bg-dark-grayish-cyan{ background-color: hsl(var(--clr-dark-grayish-cyan));}
+.bg-grayish-cyan{ background-color: hsl(var(--clr-grayish-cyan));}
+.bg-light-grayish-cyan{ background-color: hsl( var(--clr-light-grayish-cyan));} 
+.bg-very-light-grayish-cyan{ background-color: hsl( var(--clr-very-light-grayish-cyan));} 
+.bg-white{ background-color: hsl(var(--clr-white));}
+
+.fg-strong-cyan{ color: hsl(var(--clr-strong-cyan));}
+.fg-very-dark-cyan{ color: hsl(var(--clr-very-dark-cyan));}
+.fg-grayish-cyan{ color: hsl(var(--clr-grayish-cyan));}
+.fg-white{ color: hsl(var(--clr-white));}
+
+/* typography */
+
+.font-family { font-family: var(--font-family); } 
+.font-size { font-size: var(--font-size); }
+
+
+h1 {
+    text-align: center;
+    margin: 163px auto 88px auto;
+}
+
+label {
+    display: block;
+}
+
+.card {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.display {
+    padding: 40px;
+}
+
+.btn { 
+    width: 117px;
+}
+.btn-large {
+    width: 333px;
+}

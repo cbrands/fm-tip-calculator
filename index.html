@@ -7,49 +7,62 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; padding-top: 50px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <h1>Splitter</h1>
-  <form>
-    <label for="bill">Bill</label>
-    <input type="text" name="bill" id="bill" required>
-  
-    <p>Select Tip %</p>
-    <button>5%</button>
-    <button>10%</button>
-    <button>15%</button>
-    <button>25%</button>
-    <button>50%</button>
-    <button>Custom</button>
-  
-    <label for="people">Number of People</label>
-    <input type="text" name="people" id="people" required> 
-  
-  </form>
-  <div class="display">
-    <div class="record">
-      <div class="payment">
-        <h2>Tip Amount</h2>
-        <p class="per-person">/ person</p>
+<body class="bg-light-grayish-cyan font-family font-size">
+  <h1>Spli<br>tter</h1>
+  <div class="card bg-white flex">
+    <form>
+      <label for="bill" class="fg-grayish-cyan">Bill</label>
+      <input type="text" name="bill" id="bill" class="bg-very-light-grayish-cyan" required>
+    
+      <p class="fg-grayish-cyan">Select Tip %</p>
+      <div class="button-row">
+        <button class="btn bg-very-dark-cyan fg-white">5%</button>
+        <button class="btn bg-very-dark-cyan fg-white">10%</button>
+        <button class="btn bg-very-dark-cyan fg-white">15%</button>
       </div>
-      <p class="dollar">$0.00</p>
-    </div>
-    <div class="record">
-       <div class="payment">
-        <h2>Total</h2>
-        <p class="per-person">/ person</p>
+      <div class="button-row">
+        <button class="btn bg-very-dark-cyan fg-white">25%</button>
+        <button class="btn bg-very-dark-cyan fg-white">50%</button>
+        <button class="btn bg-very-light-grayish-cyan fg-grayish-cyan">Custom</button>
       </div>
-      <p class="dollar">$0.00</p>
+
+    
+      <label for="people" class="fg-grayish-cyan">Number of People</label>
+      <input type="text" name="people" id="people" class="bg-very-light-grayish-cyan" required> 
+    
+    </form>
+    <div class="display bg-very-dark-cyan">
+      <div class="record">
+        <div class="payment">
+          <h2 class="fg-white">Tip Amount</h2>
+          <p class="per-person fg-grayish-cyan">/ person</p>
+        </div>
+        <p class="dollar fg-strong-cyan">$0.00</p>
+      </div>
+      <div class="record">
+         <div class="payment fg-white">
+          <h2>Total</h2>
+          <p class="per-person fg-grayish-cyan">/ person</p>
+        </div>
+        <p class="dollar fg-strong-cyan">$0.00</p>
+      </div>
+      <button class="bg-dark-cyan fg-very-dark-cyan">Reset</button>
+    
     </div>
-    <button>Reset</button>
-  
   </div>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
